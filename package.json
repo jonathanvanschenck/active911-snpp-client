@@ -1,0 +1,11 @@
+{
+  "name": "active911-snpp-client",
+  "version": "0.1.0",
+  "description": "A simple SNPP Client for Active911 Alert Generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan D. B. Van Schenck",
+  "license": "MIT"
+}
