@@ -28,9 +28,32 @@ alert.set("META_DATA_FIELD_2", "Even more data")
 await alert.send({
     host: "snpp.active911.com",
     port: 444,
-    pager_id: `1234-abCdeAF`, // example only, this should be your custom alert email address; see below
+    pager_id: "1234-abCdeAF", // example only, this should be your custom alert email address; see below
 })
 ```
+## CLI
+Or, if you prefer, you can use this on the command line. First install the tool globally:
+```bash
+npm install active911-snpp-client
+```
+
+Then you can,
+```bash
+a911-snpp \
+  --host "snpp.active911.com" \
+  --pager-id "1234-abCdeAF" \
+  --call "Car Crash" \
+  --place "Burgerville" \
+  --address "123 N 1st ST" \
+  --city "Pleasentville" \
+  --info "Some info" \
+  --unit "Unit" \
+  --detail "META_DATA_1=more info" \
+  --detail "META_DATA_2=even more info"
+```
+
+See `a911-snpp --help` for more information
+
 
 ## Active911 Reference
 Active911's documentation for using SNPP [can be found here](https://active911.atlassian.net/wiki/spaces/AED/pages/259784881/Sending+call+data+to+Active911+using+SNPP).
