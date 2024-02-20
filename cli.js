@@ -17,10 +17,10 @@ function help() {
     console.log("  -t,--call               :");
     console.log("  -l,--place              :");
     console.log("  -a,--address            :");
-    console.log("  -c,--city               :");
     console.log("");
     console.log("OPTIONAL");
     console.log("  -P,--port               :");
+    console.log("  -c,--city               :");
     console.log("     --priority           :");
     console.log("  -u,--unit               :");
     console.log("     --date               :");
@@ -235,10 +235,6 @@ if ( !opts.place ) {
 }
 if ( !opts.address ) {
     console.error("Missing argument --address");
-    process.exit(1);
-}
-if ( !opts.city ) {
-    console.error("Missing argument --city");
     process.exit(1);
 }
 
