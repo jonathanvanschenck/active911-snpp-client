@@ -1,6 +1,6 @@
 {
   "name": "active911-snpp-client",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple SNPP Client for Active911 Alert Generation",
   "main": "index.js",
   "scripts": {
