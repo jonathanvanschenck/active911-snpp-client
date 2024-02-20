@@ -177,6 +177,15 @@ while ( args.length ) switch ( arg = args.shift() ) {
         }
         opts.map = arg;
         break;
+    case "-i":
+    case "--id":
+        arg = args.shift();
+        if ( !arg ) {
+            console.error("Missing argument for --id");
+            process.exit(1);
+        }
+        opts.id = arg;
+        break;
     case "-I":
     case "--info":
         arg = args.shift();
